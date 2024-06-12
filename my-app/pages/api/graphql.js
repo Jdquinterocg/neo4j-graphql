@@ -1,4 +1,4 @@
-import { gql, ApolloServer } from 'apollo-server-micro';
+import { ApolloServer } from 'apollo-server-micro';
 import { ApolloServerPluginLandingPageGraphQLPlayground } from 'apollo-server-core'
 
 import neo4j from 'neo4j-driver'
