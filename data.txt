@@ -1,0 +1,91 @@
+mutation {
+  createMovies(
+    input: [
+      {
+        title: "Inception"
+        actors: { create: [{ node: { name: "Leonardo DiCaprio", nationality: "American", age: 36 } }] }
+        categories: { create: [{ node: { name: "Sci-Fi" } }] }
+      },
+      {
+        title: "The Dark Knight"
+        actors: { create: [{ node: { name: "Christian Bale", nationality: "British", age: 34 } }] }
+        categories: { create: [{ node: { name: "Action" } }] }
+      },
+      {
+        title: "The Matrix"
+        actors: { create: [{ node: { name: "Keanu Reeves", nationality: "Canadian", age: 35 } }] }
+        categories: { create: [{ node: { name: "Sci-Fi" } }] }
+      },
+      {
+        title: "Titanic"
+        actors: { create: [{ node: { name: "Kate Winslet", nationality: "British", age: 22 } }] }
+        categories: { create: [{ node: { name: "Romance" } }] }
+      },
+      {
+        title: "Pulp Fiction"
+        actors: { create: [{ node: { name: "John Travolta", nationality: "American", age: 40 } }] }
+        categories: { create: [{ node: { name: "Crime" } }] }
+      },
+      {
+        title: "Fight Club"
+        actors: { create: [{ node: { name: "Brad Pitt", nationality: "American", age: 35 } }] }
+        categories: { create: [{ node: { name: "Drama" } }] }
+      },
+      {
+        title: "The Shawshank Redemption"
+        actors: { create: [{ node: { name: "Morgan Freeman", nationality: "American", age: 57 } }] }
+        categories: { create: [{ node: { name: "Drama" } }] }
+      },
+      {
+        title: "Gladiator"
+        actors: { create: [{ node: { name: "Russell Crowe", nationality: "Australian", age: 36 } }] }
+        categories: { create: [{ node: { name: "Action" } }] }
+      },
+      {
+        title: "Jurassic Park"
+        actors: { create: [{ node: { name: "Sam Neill", nationality: "New Zealander", age: 45 } }] }
+        categories: { create: [{ node: { name: "Adventure" } }] }
+      },
+      {
+        title: "The Godfather"
+        actors: { create: [{ node: { name: "Marlon Brando", nationality: "American", age: 47 } }] }
+        categories: { create: [{ node: { name: "Crime" } }] }
+      },
+      {
+        title: "Schindler's List"
+        actors: { create: [{ node: { name: "Liam Neeson", nationality: "Irish", age: 41 } }] }
+        categories: { create: [{ node: { name: "Biography" } }] }
+      },
+      {
+        title: "The Lion King"
+        actors: { create: [{ node: { name: "Matthew Broderick", nationality: "American", age: 32 } }] }
+        categories: { create: [{ node: { name: "Animation" } }] }
+      },
+      {
+        title: "Avatar"
+        actors: { create: [{ node: { name: "Sam Worthington", nationality: "Australian", age: 33 } }] }
+        categories: { create: [{ node: { name: "Sci-Fi" } }] }
+      },
+      {
+        title: "The Lord of the Rings: The Fellowship of the Ring"
+        actors: { create: [{ node: { name: "Elijah Wood", nationality: "American", age: 20 } }] }
+        categories: { create: [{ node: { name: "Fantasy" } }] }
+      },
+      {
+        title: "Star Wars: Episode IV - A New Hope"
+        actors: { create: [{ node: { name: "Mark Hamill", nationality: "American", age: 26 } }] }
+        categories: { create: [{ node: { name: "Sci-Fi" } }] }
+      }
+    ]
+  ) {
+    movies {
+      title
+      actors {
+        name
+      }
+      categories {
+        name
+      }
+    }
+  }
+}
